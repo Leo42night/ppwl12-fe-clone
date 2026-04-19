@@ -6,11 +6,6 @@ Brief:
 2. Menggunakan template repo ini sebagai base, dengan Stack React-TS+TailwindCSS. Target proyek ini untuk melatih mahasiswa dalam mendesain UI menggunakan TailwindCSS & memanfaatkan state di React (untuk interaksi seperti transition carousel, popup, dsb). 
 3. Deploy web ke InfinityFree, dengan alur: `GitHub (branch 'main' berubah) → (GitHub Actions build pakai Bun + Vite) → upload /dist → InfinityFree (via FTP)`. Jadi mahasiswa juga belajar rule branch protection, github action (CI/CD), pull request & git merging, & koneksi FTP.
 
-Step terbagi atas:
-1. [Setup Hosting InfinityFree](#inifinity-free-hosting--domain)
-2. [Setup Repo & Proyek](#setup-repo)
-3. [Pembagian Tugas](#)
-
 ## 1. InfinityFree (Hosting, Domain, & FTP)
 > Instruksi ini untuk 1 orang perwakilan.
 
@@ -116,7 +111,7 @@ Kali ini kita akan belajar menggunakan AI dalam web development, terutama untuk 
 	- Kode akan dibangun pakai next.js, jadi anda perlu ganti elemen next.js jadi pakai React biasa.
 	- Kamu perlu salin kode manual 1 per satu ke local (karena "download sekaligus" masih dalam fitur pro).
 
-## Final
+## 4. Final
 
 **Submit** url github repo. 
 
@@ -124,6 +119,7 @@ Kali ini kita akan belajar menggunakan AI dalam web development, terutama untuk 
 - Nilai Tim: 
     - Terdapat sharing components. Jika ada, kumpulkan dalam dir `components/`.
     - CSS terintegrasi dalam 1 file `index.css`
+    - Rapikan repo, hapus file atau kode yang tidak digunakan.
 - Nilai Personel: 
     - Kemiripan UI dengan referensi Asli.
     - Struktur UI yang lebih kompleks dibanding anggota lain.
