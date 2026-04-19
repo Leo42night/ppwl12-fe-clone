@@ -27,7 +27,7 @@ Dari panel InfinityFree, ambil:
 - FTP Host (contoh: `ftpupload.net`)
 - FTP Username
 - FTP Password
-- Directory tujuan: `/htdocs`
+- Directory tujuan: `htdocs/`
 
 ## 2. Setup Repo
 > Instruksi ini untuk 1 orang perwakilan.
