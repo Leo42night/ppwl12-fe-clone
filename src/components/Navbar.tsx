@@ -7,10 +7,6 @@ const Navbar = () => {
   const navLinks = [
     { name: 'Page1', path: '/' },
     { name: 'Page2', path: '/page-2' },
-    { name: 'Page3', path: '/page-3' },
-    { name: 'Page4', path: '/page-4' },
-    { name: 'Page5', path: '/page-5' },
-    { name: 'Page6', path: '/page-6' },
     { name: 'PageExample', path: '/page-example' },
   ];
 

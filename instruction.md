@@ -65,6 +65,10 @@ Pada tab **Code** -> klik pada bagian **About** (Simbol *Gear*) -> **Website** (
 > Buka InfinityFree -> [Your Hosting] -> FileManager (Hapus file htdocs/.htaccess).
 > 
 
+<details><summary>Ada beberapa file yang dimodifkasi</summary>
+
+#### **[1] File (deploy.yml)**
+
 Lihat file `.github\workflow\deploy.yml`. Pada dasarnya file ini adalah konfigurasi untuk fitur Github action yang digunakan untuk melakukan proses ketika suatu event terjadi/ter-trigger. 
 - Apa *trigger event* nya? Ketika ada push ke branch `main`. 
 - Apa *jobs* yang dijalankan? Ada 1 jobs yang terjadi `build-test-and-deploy`. Jobs memerlukan OS server untuk menjalankan perintah, dan yang sekarang dipakai adalah `ubuntu`.
@@ -73,6 +77,16 @@ Lihat file `.github\workflow\deploy.yml`. Pada dasarnya file ini adalah konfigur
     2. pakai bebrapa *step* manual: *install dependency*, build, & test.
     3. Terakhir, *uses* template koneksi FPT `SamKirkland/FTP-Deploy-Action@v4.3.4`, dengan parameter untuk koneksi dan target path. 
 **Betul!** File ini konsepnya hampir mirip dengan Dockerfile. 
+
+#### **[2] File (vite.config.ts)**
+Pastikan di `vite.config.ts`:
+```ts
+export default defineConfig({
+  base: "./", // penting untuk hosting statis
+});
+```
+> Kalau tidak, asset bisa error (CSS/JS tidak load di InfinityFree).
+</details>
 
 ### 2.2. Ruleset: Proteksi branch main
 - Masuk ke: `Repo → Settings → Rules/Rulesets → New branch ruleset` (name: `Protect branch main`)
@@ -104,7 +118,7 @@ git clone https://github.com/repoPerwakilan/ppwl12-fe-clone && cd ppwl12-fe-clon
 bun install
 bun dev
 ## Tampilan sudah diberi navbar untuk berpindah halaman. Ini agar asdos dapat navigasi halaman dan mudah dalam penilaian. 
-## Sudah disediakan template Page1.tsx - Page6.tsx, isi sesuai hasil clone anda. 
+## Sudah disediakan template Page1.tsx - Page2.tsx, isi sesuai hasil clone anda. 
 ```
 Lihat di Navigasi web pada `PageExample` ([referensi](https://universe.leagueoflegends.com/en_US/)), itu  salah satu contoh halaman. Anda dapat menghapus nya dan contoh dependensinya di `components/`, `lib/`, dan kode di `index.css` 
 
@@ -115,7 +129,7 @@ Kita akan menggunakan AI dalam web development, terutama untuk generate template
 	- ketika anda generate, akan ada opsi generate, pilih "generate semua".
 	- Kode akan dibangun pakai next.js, jadi anda perlu ganti elemen next.js jadi pakai React biasa.
 	- Anda perlu salin kode manual 1 per satu ke local (karena "download sekaligus" masih dalam fitur pro).
-> Liat [video tips cloing web](https://drive.google.com/file/d/1JvDKl4VHxZyi6fhzRmm8t0tpGQC1uDAf/view?usp=drive_link) ini sebagai referensi dalam cloning website nya.
+> Liat [video tips cloing web](https://drive.google.com/file/d/1OH6GrTbvOacRhNob79uRn1jD7QF2o-In/view?usp=drive_link) ini sebagai referensi dalam cloning website nya.
 
 ## 4. Final
 
