@@ -13,9 +13,9 @@ Main Web: [kokbisa.id](https://www.kokbisa.id/)
 
 |        Name       |    NIM     | Reference Page | Spesific Component |
 |-------------------|------------|----------------|--------------------|
-| Leo Prangs Tobing | H110124000 | [Page1-Home](https://www.kokbisa.id/) | Navbar, Header Carousel |
-| Other             | H110124000 | [Page1-Home](https://www.kokbisa.id/) | Main |
-| Other             | H110124000 | [Page1-Home](https://www.kokbisa.id/) | Footer |
-| Other             | H110124000 | [Page2-Langganan](https://www.kokbisa.id/langganan) | Title Area |
-| Other             | H110124000 | [Page2-Langganan](https://www.kokbisa.id/langganan) | Form Area |
-| Other             | H110124000 | [Page2-Langganan](https://www.kokbisa.id/langganan) | Button Area |
+| Leo Prangs Tobing | H110124000 | [Page1-Home](https://www.kokbisa.id/) | `Navbar.tsx`, `Header.tsx` |
+| Other             | H110124000 | [Page1-Home](https://www.kokbisa.id/) | `Main.tsx` |
+| Other             | H110124000 | [Page1-Home](https://www.kokbisa.id/) | `Footer.tsx` |
+| Other             | H110124000 | [Page2-Langganan](https://www.kokbisa.id/langganan) | `Sidebar.tsx` |
+| Other             | H110124000 | [Page2-Langganan](https://www.kokbisa.id/langganan) | `Form.tsx` |
+| Other             | H110124000 | [Page2-Langganan](https://www.kokbisa.id/langganan) | `ListBlog.tsx` |
