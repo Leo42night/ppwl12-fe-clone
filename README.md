@@ -19,3 +19,6 @@ Main Web: [kokbisa.id](https://www.kokbisa.id/)
 | Other             | H110124000 | [Page2-Langganan](https://www.kokbisa.id/langganan) | `Sidebar.tsx` |
 | Other             | H110124000 | [Page2-Langganan](https://www.kokbisa.id/langganan) | `Form.tsx` |
 | Other             | H110124000 | [Page2-Langganan](https://www.kokbisa.id/langganan) | `ListBlog.tsx` |
+
+> [!NOTE]
+> Jika ada kendala atau pertanyaan seperti: cara load img, layout bersikap aneh, dsb. Lapurkan di Issue. SS elemen yang diharapkan vs elemen yang didapat. lalu tulus apa yang sudah di coba.  
