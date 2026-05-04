@@ -122,6 +122,9 @@ bun dev
 ```
 Lihat di Navigasi web pada `PageExample` ([referensi](https://universe.leagueoflegends.com/en_US/)), itu  salah satu contoh halaman. Anda dapat menghapus nya dan  dependensinya di `components/`, `lib/`, dan kode style nya di `index.css`. 
 
+> [!NOTE]
+> Biarkan elemen navigasi tersebut, karena infinityfree tidak bisa akses react-router-dom langsung dari url browser (akan 404), harus pakai button elemen Nav dari react-router-dom. Ini supaya asdos mudah pindah halaman.
+
 Kita akan menggunakan AI dalam web development, terutama untuk generate template dasar.
 - Masuk ke https://www.insidersedge.io/ (berisi informasi berbagai web tool AI yang dapat anda coba)
 - Cari "same" (tool AI untuk clone website).
