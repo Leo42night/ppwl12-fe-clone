@@ -123,7 +123,7 @@ bun dev
 Lihat di Navigasi web pada `PageExample` ([referensi](https://universe.leagueoflegends.com/en_US/)), itu  salah satu contoh halaman. Anda dapat menghapus nya dan  dependensinya di `components/`, `lib/`, dan kode style nya di `index.css`. 
 
 > [!NOTE]
-> Biarkan elemen navigasi tersebut, karena infinityfree tidak bisa akses react-router-dom langsung dari url browser (akan 404), harus pakai button elemen <Link/> dari react-router-dom untuk navigasi. Ini supaya asdos tau button yang perlu di klik untuk pindah halaman.
+> Biarkan elemen Navbar.tsx tetap ada, karena infinityfree tidak bisa akses react-router-dom langsung dari url browser (akan 404), harus pakai button elemen <Link/> dari react-router-dom untuk navigasi. Ini supaya asdos tau button yang perlu di klik untuk pindah halaman. Anda cukup modifikasi route nya agar sesuai route halaman yang diminta.
 
 Kita akan menggunakan AI dalam web development, terutama untuk generate template dasar.
 - Masuk ke https://www.insidersedge.io/ (berisi informasi berbagai web tool AI yang dapat anda coba)
