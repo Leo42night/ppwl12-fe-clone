@@ -85,6 +85,21 @@ export default defineConfig({
   base: "./", // penting untuk hosting statis
 });
 ```
+
+#### **[3] File (.htaccess)**
+```
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+
+  RewriteRule ^index\.html$ - [L]
+
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+
+  RewriteRule . /index.html [L]
+</IfModule>
+```
 > Kalau tidak, asset bisa error (CSS/JS tidak load di InfinityFree).
 </details>
 
@@ -123,7 +138,7 @@ bun dev
 Lihat di Navigasi web pada `PageExample` ([referensi](https://universe.leagueoflegends.com/en_US/)), itu  salah satu contoh halaman. Anda dapat menghapus nya dan  dependensinya di `components/`, `lib/`, dan kode style nya di `index.css`. 
 
 > [!NOTE]
-> Biarkan elemen Navbar.tsx tetap ada, karena infinityfree tidak bisa akses react-router-dom langsung dari url browser (akan 404), harus pakai button elemen <Link/> dari react-router-dom untuk navigasi. Ini supaya asdos tau button yang perlu di klik untuk pindah halaman. Anda cukup modifikasi route nya agar sesuai route halaman yang diminta.
+> Biarkan elemen Navbar.tsx tetap ada, karena button elemen <Link/> dari react-router-dom dipakai asdos untuk pindah halaman. Anda cukup modifikasi route nya agar sesuai route halaman yang diminta.
 
 Kita akan menggunakan AI dalam web development, terutama untuk generate template dasar.
 - Masuk ke https://www.insidersedge.io/ (berisi informasi berbagai web tool AI yang dapat anda coba)
